@@ -36,10 +36,10 @@
             max-width: 1000px;
             margin: auto;
         }
-        .programs, .beliefs, .contact, .blog {
+        .programs, .beliefs, .contact {
             margin-top: 40px;
         }
-        .program, .post {
+        .program {
             background: #222;
             padding: 20px;
             margin: 15px 0;
@@ -64,12 +64,16 @@
             text-align: center;
             margin-top: 30px;
         }
-        .post h3 {
-            margin-top: 0;
-            color: #ff4500;
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+            font-size: 1em;
         }
-        .post p {
-            margin: 10px 0 0 0;
+        .form-section {
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -80,7 +84,6 @@
             <a href="#about">About Us</a>
             <a href="#programs">Programs</a>
             <a href="#involved">Get Involved</a>
-            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -88,7 +91,7 @@
     <section class="hero">
         <h1>From the Struggle to Success — Your Story Ain't Over.</h1>
         <a href="#involved" class="btn">Join the Movement</a>
-        <a href="#donate" class="btn">Donate</a>
+        <a href="https://cash.app/$freshforthetruth" class="btn" target="_blank">Donate</a>
     </section>
 
     <div class="container">
@@ -136,23 +139,20 @@
             <h2>Get Involved</h2>
             <p>Want to be part of the movement? This is more than a vibe — it’s a calling. You can mentor youth, volunteer your time, offer skills, fund programs, or spread awareness. This ain’t a one-man mission — it’s a family of faith and fighters building something real together.</p>
             <div class="cta-buttons">
-                <a href="mailto:robertgrabow1@gmail.com" class="btn">Mentor</a>
-                <a href="mailto:robertgrabow1@gmail.com" class="btn">Volunteer</a>
-                <a href="mailto:robertgrabow1@gmail.com" class="btn">Partner</a>
+                <a href="mailto:robertgrabow1@gmail.com?subject=Mentorship%20Interest" class="btn">Mentor</a>
+                <a href="mailto:robertgrabow1@gmail.com?subject=Volunteer%20Signup" class="btn">Volunteer</a>
+                <a href="mailto:robertgrabow1@gmail.com?subject=Partnership%20Inquiry" class="btn">Partner</a>
                 <a href="https://cash.app/$freshforthetruth" class="btn" target="_blank">Donate</a>
             </div>
         </section>
 
-        <section id="blog" class="blog">
-            <h2>From the Frontlines — Blog</h2>
-            <div class="post">
-                <h3>July 13, 2025 – God Over Everything</h3>
-                <p>I woke up feeling peace in my chest. This movement, this purpose — it's bigger than me. I'm here for something real. No matter how dark it gets, light's still there. Let’s keep going.</p>
-            </div>
-            <div class="post">
-                <h3>July 12, 2025 – Power in the Pause</h3>
-                <p>Not every vibe deserves a response. I learned to pause, pray, and move with wisdom. The old me would react — the new me responds. That’s growth. That’s God.</p>
-            </div>
+        <section class="form-section">
+            <h2>Submit a Prayer Request</h2>
+            <form action="mailto:robertgrabow1@gmail.com" method="POST" enctype="text/plain">
+                <label for="prayer">Your Prayer:</label>
+                <textarea id="prayer" name="prayer" rows="4" placeholder="Write your prayer here..."></textarea>
+                <input type="submit" value="Send Request" class="btn">
+            </form>
         </section>
 
         <section id="contact" class="contact">
